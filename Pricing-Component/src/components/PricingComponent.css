@@ -1,0 +1,153 @@
+.pricing-container {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.pricing-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.pricing-subtitle {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.pageviews {
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin: 1.5rem 0 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.slider {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.price-display {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 1rem 0;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.per-month {
+  margin-left: 0.5rem;
+  color: #64748b;
+}
+
+.billing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.discount {
+  font-size: 0.7rem;
+  background: #fef3c7;
+  color: #f59e0b;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  color: #475569;
+}
+
+.features-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.trial-button {
+  background: #1e293b;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.trial-button:hover {
+  background: #0f172a;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cbd5e1;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.slider-switch::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider-switch {
+  background-color: #0d9488;
+}
+
+input:checked + .slider-switch::before {
+  transform: translateX(18px);
+}
